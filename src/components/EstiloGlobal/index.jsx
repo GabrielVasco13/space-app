@@ -1,10 +1,25 @@
 import { createGlobalStyle } from "styled-components";
 
+import PoppinsBold from "./fonts/Poppins-Bold.ttf";
+import PoppinsRegular from "./fonts/Poppins-Regular.ttf";
+
 const EstiloGlobal = createGlobalStyle`
-    html {
+@font-face {
+  font-family: 'PoppinsRegular';
+  src: local('Poppins Regular'), local('PoppinsRegular'), url(${PoppinsRegular});
+}
+
+@font-face {
+  font-family: 'PoppinsBold';
+  src: local('Poppins Bold'), local('PoppinsBold'), url(${PoppinsBold});
+}
+
+html {
   line-height: 1.15; 
   -webkit-text-size-adjust: 100%; 
+  font-family: PoppinsRegular;
 }
+
 body {
   margin: 0;
   min-height: 100vh;
