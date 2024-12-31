@@ -5,6 +5,8 @@ const HeaderStyled = styled.header`
   padding: 60px 0%;
   display: flex;
   justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
   img {
     max-width: 212px;
   }

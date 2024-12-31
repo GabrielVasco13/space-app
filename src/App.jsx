@@ -3,6 +3,7 @@ import EstiloGlobal from "./components/EstiloGlobal";
 import Cabecalho from "./components/Cabecalho";
 import BarraLateral from "./components/BarraLateral";
 import TituloEstilizado from "./components/TituloEstilizado";
+import Galeria from "./components/Galeria";
 
 const FundoGradiente = styled.div`
   background: linear-gradient(
@@ -20,6 +21,7 @@ const AppContainer = styled.div`
   gap: 24px;
   width: 1440px;
   max-width: 100%;
+  margin: 0% auto;
 `;
 
 const MainContainer = styled.main`
@@ -37,6 +39,7 @@ function App() {
           <TituloEstilizado>
             A galeria mais completa de fotos do espaço!
           </TituloEstilizado>
+          <Galeria />
         </MainContainer>
       </AppContainer>
     </FundoGradiente>
