@@ -2,6 +2,7 @@ import styled from "styled-components";
 import EstiloGlobal from "./components/EstiloGlobal";
 import Cabecalho from "./components/Cabecalho";
 import BarraLateral from "./components/BarraLateral";
+import TituloEstilizado from "./components/TituloEstilizado";
 
 const FundoGradiente = styled.div`
   background: linear-gradient(
@@ -14,12 +15,30 @@ const FundoGradiente = styled.div`
   min-height: 100vh;
 `;
 
+const AppContainer = styled.div`
+  display: flex;
+  gap: 24px;
+  width: 1440px;
+  max-width: 100%;
+`;
+
+const MainContainer = styled.main`
+  flex: 1;
+`;
+
 function App() {
   return (
     <FundoGradiente>
       <EstiloGlobal />
       <Cabecalho />
-      <BarraLateral />
+      <AppContainer>
+        <BarraLateral />
+        <MainContainer>
+          <TituloEstilizado>
+            A galeria mais completa de fotos do espaço!
+          </TituloEstilizado>
+        </MainContainer>
+      </AppContainer>
     </FundoGradiente>
   );
 }

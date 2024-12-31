@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styled from "styled-components";
 
 const ListItemStyle = styled.li`
@@ -8,6 +9,7 @@ const ListItemStyle = styled.li`
   display: flex;
   align-items: center;
   gap: 22px;
+  font-size: 18px;
   color: ${(props) => (props.$ativo ? "#7B78E5" : "#D9D9D9")};
   font-family: ${(props) => (props.$ativo ? "PoppinsBold" : "PoppinsRegular")};
 `;

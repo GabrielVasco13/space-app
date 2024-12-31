@@ -30,7 +30,31 @@ export default function BarraLateral() {
             iconeAtivo="/icons/mais-vistas-ativo.png"
             iconeInativo="/icons/mais-vistas-inativo.png"
           >
-            Mais Visitadas
+            Mais vistas
+          </ItemNavegacao>
+        </ListStyled>
+        <ListStyled>
+          <ItemNavegacao
+            iconeAtivo="/icons/mais-curtidas-ativo.png"
+            iconeInativo="/icons/mais-curtidas-inativo.png"
+          >
+            Mais curtidas
+          </ItemNavegacao>
+        </ListStyled>
+        <ListStyled>
+          <ItemNavegacao
+            iconeAtivo="/icons/novas-ativo.png"
+            iconeInativo="/icons/novas-inativo.png"
+          >
+            Novas
+          </ItemNavegacao>
+        </ListStyled>
+        <ListStyled>
+          <ItemNavegacao
+            iconeAtivo="/icons/surpreenda-me-ativo.png"
+            iconeInativo="/icons/surpreenda-me-inativo.png"
+          >
+            Surpreenda-me
           </ItemNavegacao>
         </ListStyled>
       </nav>
