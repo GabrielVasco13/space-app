@@ -5,6 +5,9 @@ import BarraLateral from "./components/BarraLateral";
 import TituloEstilizado from "./components/TituloEstilizado";
 import Galeria from "./components/Galeria";
 
+import fotos from "./fotos.json";
+import { useState } from "react";
+
 const FundoGradiente = styled.div`
   background: linear-gradient(
     174.61deg,
@@ -29,6 +32,8 @@ const MainContainer = styled.main`
 `;
 
 function App() {
+  const [fotosDaGaleria, setFotos] = useState(fotos);
+
   return (
     <FundoGradiente>
       <EstiloGlobal />
@@ -39,7 +44,7 @@ function App() {
           <TituloEstilizado>
             A galeria mais completa de fotos do espaço!
           </TituloEstilizado>
-          <Galeria />
+          <Galeria fotos={fotosDaGaleria} />
         </MainContainer>
       </AppContainer>
     </FundoGradiente>
